@@ -80,7 +80,7 @@ app.post("/api/notes", (request, response) => {
 
   notes = notes.concat(newNote);
 
-  response.json(note);
+  response.status(201).json(note);
 });
 
 const PORT = 3001;
